@@ -1,0 +1,16 @@
+ {
+  "name": "HANZ Snow Extension",
+  "version": "1.0",
+  "description": "Unhides Resolution notes in Snow",
+  "background": {"page": "background.html"},
+  "manifest_version": 2,
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery.min.js", "background.js" ],
+    "matches": [ "https://*.service-now.com/*"]
+  }]
+}
